@@ -1,0 +1,22 @@
+<html>
+<head></head>
+
+<body>
+<form action="watertank_data" method="get" disabled>
+Height of water-tank(in cm):<input type="number" name="total_height" max="2000"><br>
+Max. permitted water(in %):<input type="number" name="upper_level_percentage_water_in_tank" min="1" max="100"><br>
+Min. permitted water (in%):<input type="number" name="lower_percentage_water_in_tank" min="1" max="100"><br>
+ON time:<input type="time" name="on_time"><br>
+OFF time:<input type="time" name="off_time"><br>
+<input type=submit name=\"Submit_watertank_data\" value=\"Submit_watertank_data\" onClick=\"GetCode()\" style='height:22px; width:80px'>
+</form>
+<br><p>Switch is currently: <a id='ajax'><a></p>
+<br>Control servo:<input type='button' onclick='turnOnServo()' value='Turn ON' >
+<script>
+function turnOnServo(){
+document.getElementById('ajax').innerHTML = '<span style=\'background-color:#00FF00; font-size:18pt\'>ON</span>';
+}
+</script>
+</body>
+
+</html>
