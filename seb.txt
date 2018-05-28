@@ -1,0 +1,10 @@
+What is this project about :
+This project basically uses an esp8266 based node mcu unit to connect to the internet and control the settings for a 
+water control system.
+The water control system contains the following units:
+1)Watertank:this is simply a tank which is mounted with the processing unit which is the uprocessor and the other
+peripherals
+2)Nodemcu: this is the brains of the projects it can connect to the internet upload webpages to the internet and
+connect the various other peripherals in this project we have connected the node to the internet to display the value of 
+percentage water in tank change the timing required for turn  on and turn off of the device.
+We have also integrated the device to the a 433Mhz transmitter and 
